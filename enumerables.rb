@@ -23,7 +23,7 @@ end
 def spiciest_foods(spicy_foods)
   # your code here
   spicy_foods.filter do |food|
-    food[:heat_level]> 5
+    food[:heat_level]>5
   end
 end
 
@@ -34,27 +34,27 @@ end
 # "hello" * 3 == "hellohellohello"
 def print_spicy_foods(spicy_foods)
   # your code here
-  spicy_foods.each do |food|
-    puts "#{food[:name]} (#{food[:cuisine]}) | Heat Level: #{'🌶' * food[:heat_level]}"
-  end
+ spicy_foods.each do |food|
+  puts "#{food[:name]} (#{food[:cuisine]}) | Heat Level: #{'🌶' * food[:heat_level]}"
+ end
 end
 
 # given an array of spicy foods and a string representing a cuisine, **return a single hash**  
 # for the spicy food whose cuisine matches the cuisine being passed to the method
 def get_spicy_food_by_cuisine(spicy_foods, cuisine)
+  # your code here
   spicy_foods.find do |food|
     food[:cuisine] == cuisine
   end
-  # your code here
 end
 
 # Given an array of spicy foods, **return an array of hashes** 
 # sorted by heat level from lowest to highest
 def sort_by_heat(spicy_foods)
   # your code here
-  spicy_foods.sort_by do |food|
-    food[:heat_level]
-  end
+ spicy_foods.sort_by do |food|
+  food[:heat_level]
+ end
 end
 
 # given an array of spicy foods, output to the terminal ONLY 
@@ -63,8 +63,8 @@ end
 # HINT: Try to use methods you've already written to solve this!
 def print_spiciest_foods(spicy_foods)
   # your code here
-  spiciest= spiciest_foods(spicy_foods)
-  print_spicy_foods(spiciest)
+ spiciest=spiciest_foods(spicy_foods)
+ print_spicy_foods(spiciest)
 end
 
 # given an array of spicy foods, return an integer representing 
